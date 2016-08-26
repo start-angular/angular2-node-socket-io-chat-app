@@ -1,9 +1,6 @@
 <html>
   <head>
     <title>Angular2_Node_chatApp</title>
-    <!-- <style>
-     /* * { margin: 0; padding: 0; box-sizing: border-box; }*/
-    </style> -->
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,12 +14,11 @@
      
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
-    
     <script src="socket.io/socket.io.js"></script>
 
     <script>
-       System.import('app').catch(function(err){ console.error(err); });
-      //var socket = io();
+      //Client Code(Angular2)
+       System.import('client').catch(function(err){ console.error(err); });
     </script>
   </head>
   <!-- 3. Display the application -->

@@ -16,13 +16,14 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "<h1>{{title}}</h1>\n  \t\t\t\n\n  \t\t\t"
+            template: "<h1>{{title}}</h1>"
         })
     ], AppComponent);
     return AppComponent;
 }());
 exports.AppComponent = AppComponent;
 var socket = io();
+//io.connect();
 $('form').submit(function () {
     socket.emit('chatMessageToSocketServer', $('#message-box').val());
     $('#message-box').val('');
