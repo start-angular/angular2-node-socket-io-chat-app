@@ -1,0 +1,302 @@
+/* Master Styles */
+h1 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+// body {
+//   background-color: #CFD8DC;
+// }
+
+// button,
+// input[type="checkbox"] {
+//   outline: none;
+// }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font: 13px Helvetica, Arial; }
+
+
+
+ .selected {
+    background-color: #CFD8DC !important;
+    color: white;
+  }
+  .heroes {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  .heroes li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+  .heroes li.selected:hover {
+    background-color: #BBD8DC !important;
+    color: white;
+  }
+  .heroes li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+  .heroes .text {
+    position: relative;
+    top: -3px;
+  }
+  .heroes .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #607D8B;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+
+//   button {
+//   margin: 0;
+//   padding: 0;
+//   border: 0;
+//   background: none;
+//   font-size: 100%;
+//   vertical-align: baseline;
+//   font-family: inherit;
+//   font-weight: inherit;
+//   color: inherit;
+//   -webkit-appearance: none;
+//   -ms-appearance: none;
+//   appearance: none;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-font-smoothing: antialiased;
+//   -ms-font-smoothing: antialiased;
+//   font-smoothing: antialiased;
+// }
+
+form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+#messages { list-style-type: none; margin: 0; padding: 0; }
+#messages li { padding: 5px 10px; }
+#messages li:nth-child(odd) { background: #eee; }
+
+
+  #todo-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#todo-list li {
+  position: relative;
+  font-size: 24px;
+  border-bottom: 1px solid #ededed;
+}
+
+#todo-list li label {
+  //white-space: pre;
+  word-break: break-word;
+  padding: 15px 60px 15px 15px;
+  margin-left: 45px;
+  display: inline-table;
+  line-height: 1.2;
+  transition: color 0.4s;
+}
+#todo-list li .show {
+  //white-space: pre;
+  word-break: break-word;
+  //padding: 15px 60px 15px 15px;
+  //margin-left: 45px;
+  display: inline-table;
+  line-height: 1.2;
+  transition: color 0.4s;
+}
+
+#todo-list li:last-child {
+  border-bottom: none;
+}
+
+
+#todo-list li.editing {
+  border-bottom: none;
+  padding: 0;
+}
+
+#todo-list li.editing .view {
+  display: none;
+}
+
+#todo-list li.editing .edit {
+  display: block;
+  width: 506px;
+  padding: 13px 17px 12px 17px;
+  margin: 0 0 0 43px;
+}
+
+#todo-list li .toggle {
+  text-align: center;
+  width: 40px;
+  /* auto, since non-WebKit browsers doesn't support input styling */
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  border: none; /* Mobile Safari */
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+#todo-list li .toggle:after {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#ededed" stroke-width="3"/></svg>');
+}
+
+#todo-list li .toggle:checked:after {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#bddad5" stroke-width="3"/><path fill="#5dc2af" d="M72 25L42 71 27 56l-4 4 20 20 34-52z"/></svg>');
+}
+
+ .complete{
+  color: #d9d9d9;
+  text-decoration: line-through;
+}
+
+  #todo-list li .edit {
+  display: none;
+}
+
+
+#todo-list li .destroy {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto 0;
+  font-size: 30px;
+  color: #cc9a9a;
+  margin-bottom: 11px;
+  transition: color 0.2s ease-out;
+}
+
+#todo-list li .destroy:hover {
+  color: #af5b5e;
+}
+
+#todo-list li .destroy:after {
+  content: '×';
+}
+
+#todo-list li:hover .destroy {
+  display: block;
+}
+
+.visible {
+  display: block !important;
+}
+
+#footer {
+  color: #777;
+  padding: 10px 15px;
+  height: 20px;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+
+#footer:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  overflow: hidden;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2),
+  0 8px 0 -3px #f6f6f6,
+  0 9px 1px -3px rgba(0, 0, 0, 0.2),
+  0 16px 0 -6px #f6f6f6,
+  0 17px 2px -6px rgba(0, 0, 0, 0.2);
+}
+
+#todo-count {
+  float: left;
+  text-align: left;
+}
+
+#todo-count strong {
+  font-weight: 300;
+}
+
+#filters {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+#filters li {
+  display: inline;
+}
+
+#filters li a {
+  color: inherit;
+  margin: 3px;
+  padding: 3px 7px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+#filters li a.selected,
+#filters li a:hover {
+  border-color: rgba(175, 47, 47, 0.1);
+}
+
+#filters li a.selected {
+  border-color: rgba(175, 47, 47, 0.2);
+}
+
+#clear-completed,
+html #clear-completed:active {
+  float: right;
+  position: relative;
+  line-height: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  visibility: hidden;
+  position: relative;
+}
+
+#clear-completed::after {
+  visibility: visible;
+  content: 'Clear completed';
+  position: absolute;
+  right: 0;
+  white-space: nowrap;
+}
+
+#clear-completed:hover::after {
+  text-decoration: underline;
+}
