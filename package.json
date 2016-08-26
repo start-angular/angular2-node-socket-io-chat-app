@@ -1,7 +1,6 @@
 {
   "name": "angular2-socket-chatApp",
   "version": "1.0.0",
-  //"main": "index.js",
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
