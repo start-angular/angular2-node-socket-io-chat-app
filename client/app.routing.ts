@@ -1,6 +1,6 @@
 import { Routes, RouterModule, provideRouter } from "@angular/router";
 
-import { nickNameRoutes }  from "./nickname/index";
+import { nickNameRoutes }  from "./nickName-component/index";
 
 import { chatComponentRoutes }  from "./chat-component/index";
 

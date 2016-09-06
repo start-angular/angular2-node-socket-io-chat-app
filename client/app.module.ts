@@ -9,7 +9,7 @@ import { AppComponent } from "./app.component";
 
 import { routing, appRoutingProviders } from "./app.routing";
 
-import { NickNameModule }  from "./nickname/index";
+import { NickNameModule }  from "./nickName-component/index";
 import { ChatModule }  from "./chat-component/index";
 
 // import { NicknameComponent }  from './app.nicknameComponent';

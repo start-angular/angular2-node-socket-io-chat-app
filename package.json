@@ -2,7 +2,7 @@
   "name": "angular2-socket-chatApp",
   "version": "1.0.0",
   "scripts": {
-    "start": "tsc && concurrently \"npm run tsc:w\" \"nodemon index.js\" ",
+    "start": "tsc && concurrently \"npm run tsc:w\" \"nodemon ./server/index.js\" ",
     "lite": "lite-server",
     "postinstall": "typings install",
     "tsc": "tsc",
@@ -28,6 +28,7 @@
     "zone.js": "^0.6.12",
     "angular2-in-memory-web-api": "0.0.15",
     "bootstrap": "^3.3.6",
+    "jquery": "^2.1.0",
     "express": "4.10.2",
     "socket.io": "1.2.0"
   },

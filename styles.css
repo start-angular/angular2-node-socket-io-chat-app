@@ -1,0 +1,127 @@
+/* Master Styles */
+nav {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 200%;
+}
+
+.main{
+  width: 100%;
+  margin-left: 0%;
+}
+
+.firstSubChild{
+  width: 70%;
+  float: left;
+  height: 100%;
+}
+
+.secondSubChild{
+  width: 30%;
+  float: left;
+  height: 100%;
+}
+
+#note{
+  position: fixed; bottom: 80;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font: 13px Helvetica, Arial; }
+
+#newUserID{
+  // position: absolute; 
+  // top: 10; 
+  margin-right: .5%; 
+  margin-left: 35%; 
+  word-break: break-word;
+  padding: 15px 60px 15px 15px;
+  display: inline-table;
+  line-height: 1.2;
+  transition: color 0.4s;
+  font-size: 24px;
+}
+
+#leftUserID{
+  // position: absolute; 
+  // top: 10; 
+  margin-right: .5%; 
+  margin-left: 35%; 
+  word-break: break-word;
+  padding: 15px 60px 15px 15px;
+  display: inline-table;
+  line-height: 1.2;
+  transition: color 0.4s;
+  font-size: 24px;
+}
+
+#resID{
+  position: fixed; bottom: 50; margin-right: .5%; margin-left: 75%;
+}
+
+#divID {
+background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%;  
+}
+
+div input{
+  border: 0; padding: 10px; width: 90%; 
+}
+
+div button {
+width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px;
+}
+
+#messages { list-style-type: none; margin: 0; padding: 0; }
+#messages li { padding: 5px 10px; }
+#messages li:nth-child(odd) { background: #eee; }
+
+
+#client-list {
+  margin-left: 40%;
+  padding: 0;
+  list-style: none;
+}
+
+#client-list li {
+  position: relative;
+  font-size: 24px;
+  border-bottom: 1px solid #ededed;
+}
+
+#client-list li label {
+  //white-space: pre;
+  word-break: break-word;
+  padding: 15px 60px 15px 15px;
+  margin-left: 45px;
+  display: inline-table;
+  line-height: 1.2;
+  transition: color 0.4s;
+}
+
+#client-list li .check-box {
+  text-align: center;
+  width: 40px;
+  /* auto, since non-WebKit browsers doesn't support input styling */
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  border: none; /* Mobile Safari */
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+#client-list li .check-box:checked:after {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#bddad5" stroke-width="3"/><path fill="#5dc2af" d="M72 25L42 71 27 56l-4 4 20 20 34-52z"/></svg>');
+}
+
+ 

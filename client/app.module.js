@@ -12,7 +12,7 @@ var router_1 = require("@angular/router");
 var app_routing_1 = require("./app.routing");
 var app_component_1 = require("./app.component");
 var app_routing_2 = require("./app.routing");
-var index_1 = require("./nickname/index");
+var index_1 = require("./nickname-component/index");
 var index_2 = require("./chat-component/index");
 // import { NicknameComponent }  from './app.nicknameComponent';
 var AppModule = (function () {
