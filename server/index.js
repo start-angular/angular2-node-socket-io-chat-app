@@ -4,10 +4,9 @@ var path = require('path');
 let chat_app = require('express')();
 let http = require('http').Server(chat_app);
 let io = require('socket.io')(http);
-
+let clientListNames = [];
 
 chat_app.use(express.static(__dirname, '/'));
-
 chat_app.use(express.static(__dirname, '/server/'));
 chat_app.use(express.static(__dirname + "/..", '/client/'));
 chat_app.use(express.static(__dirname + '/node_modules'));
@@ -17,17 +16,26 @@ chat_app.get('/', function(req, res){
 });
 
 io.on('connection', function(socket){
-	console.log("user connected to socket : ",socket.id);
-  //console.log('a user connected');
-  
-socket.on('disconnect', function(){
-  console.log('user disconnected');
-});
+	clientListNames.push(socket.handshake.query.userName);
+	io.emit("updateSocketList", clientListNames);
+	io.emit("addUserToSocketList",socket.handshake.query.userName);
+	
+	socket.on('disconnect', function(){
+		let name=socket.handshake.query.userName;
+		let userIndex = clientListNames.indexOf(socket.handshake.query.userName);
+		 if (userIndex != -1) {
+		 	clientListNames.splice(userIndex, 1);
+			io.emit("updateSocketList", clientListNames);
+			io.emit("removeUserFromSocketList",name);
+		 }
+  	});
 
-socket.on('chatMessageToSocketServer', function(msg){
-  console.log('user sent message : '+msg);
-  io.emit('broadcastToAll_chatMessage', msg);
-  });
+	socket.on('chatMessageToSocketServer', function(msg, func){
+		func("Message recieved!",socket.handshake.query.userName);
+		let name = socket.handshake.query.userName;
+		let sockectObj = {name,msg}
+		io.emit('broadcastToAll_chatMessage', sockectObj);
+	});
 });
 
 http.listen(3000, function(){

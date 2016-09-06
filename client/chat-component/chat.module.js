@@ -6,16 +6,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var common_1 = require("@angular/common");
+var chat_component_1 = require("./chat.component");
+var ChatModule = (function () {
+    function ChatModule() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: "sd-app",
-            templateUrl: "app.component.html"
+    ChatModule = __decorate([
+        core_1.NgModule({
+            imports: [common_1.CommonModule],
+            declarations: [chat_component_1.ChatComponent],
+            exports: [chat_component_1.ChatComponent]
         })
-    ], AppComponent);
-    return AppComponent;
+    ], ChatModule);
+    return ChatModule;
 }());
-exports.AppComponent = AppComponent;
+exports.ChatModule = ChatModule;

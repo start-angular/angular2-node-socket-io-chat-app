@@ -6,16 +6,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var router_1 = require("@angular/router");
+var common_1 = require("@angular/common");
+var nickName_component_1 = require("./nickName.component");
+var NickNameModule = (function () {
+    function NickNameModule() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: "sd-app",
-            templateUrl: "app.component.html"
+    NickNameModule = __decorate([
+        core_1.NgModule({
+            imports: [common_1.CommonModule, router_1.RouterModule],
+            declarations: [nickName_component_1.NickNameComponent],
+            exports: [nickName_component_1.NickNameComponent]
         })
-    ], AppComponent);
-    return AppComponent;
+    ], NickNameModule);
+    return NickNameModule;
 }());
-exports.AppComponent = AppComponent;
+exports.NickNameModule = NickNameModule;

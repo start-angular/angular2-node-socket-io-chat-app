@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Angular2_Node_chatApp</title>
+  </head>
+  <body >
+  <div>
+    <h2>ChatPage</h2>
+    <div class="main">
+      <div class="firstSubChild" >
+        <ul id="messages"></ul>
+        <div id="divID">
+          <input  id="message-boxID" #messagebox placeholder="Type your message here" (keyup)="sendMessageOnEnter($event, messagebox)"  (keydown)="update()" autocomplete="off" value="" autofocus required>
+          <button (click)="sendMessage(messagebox)">Send</button>
+        </div>
+      </div>
+
+      <div class="secondSubChild">
+        <div id="newUserID" *ngIf="newUser">
+          {{newUserName}} joined Chat!
+        </div>
+        <div id="leftUserID" *ngIf="leftUser">
+          {{leftUserName}} left the Chat!
+        </div>
+        <ul id="client-list" >
+          <li *ngFor="let name of clientsNameList" >
+            <div>
+              <input class="check-box" type="checkbox"
+               [checked]="true">
+              <label>{{name}}</label>
+            </div>                
+          </li>
+        </ul>      
+      </div>
+    </div>
+    <div id="resID" *ngIf="resFlag">
+      this is the server response : {{response}}
+    </div>
+  </div>
+  </body>
+</html>

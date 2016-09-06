@@ -1,5 +1,5 @@
 /* Master Styles */
-h1 {
+nav {
   color: #444;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
@@ -8,9 +8,39 @@ h2, h3 {
   color: #444;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
+  font-size: 200%;
+}
+
+#temp{
+background-color: red;
+ 
+}
+
+#temp1{
+background-color: green;
+
+}
+
+.main{
+  width: 100%;
+  margin-left: 0%;
+}
+
+.firstSubChild{
+  width: 70%;
+  float: left;
+  height: 100%;
+}
+
+.secondSubChild{
+  width: 30%;
+  float: left;
+  height: 100%;
 }
 // body {
-//   background-color: #CFD8DC;
+//   height: 100%;
+//   width: 100%;
+//   //background-color: #CFD8DC;
 // }
 
 // button,
@@ -18,100 +48,91 @@ h2, h3 {
 //   outline: none;
 // }
 
+#note{
+  position: fixed; bottom: 80;
+}
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body { font: 13px Helvetica, Arial; }
 
 
+ 
+// form #nicknameFormId{ width: 220px;
+//     height: 300px;
+//     border: 1px solid black;
+//     display: -webkit-flex; /* Safari */
+//     -webkit-align-items: center; /* Safari 7.0+ */
+//     display: flex;
+//     align-items: center;}
 
- .selected {
-    background-color: #CFD8DC !important;
-    color: white;
-  }
-  .heroes {
-    margin: 0 0 2em 0;
-    list-style-type: none;
-    padding: 0;
-    width: 15em;
-  }
-  .heroes li {
-    cursor: pointer;
-    position: relative;
-    left: 0;
-    background-color: #EEE;
-    margin: .5em;
-    padding: .3em 0;
-    height: 1.6em;
-    border-radius: 4px;
-  }
-  .heroes li.selected:hover {
-    background-color: #BBD8DC !important;
-    color: white;
-  }
-  .heroes li:hover {
-    color: #607D8B;
-    background-color: #DDD;
-    left: .1em;
-  }
-  .heroes .text {
-    position: relative;
-    top: -3px;
-  }
-  .heroes .badge {
-    display: inline-block;
-    font-size: small;
-    color: white;
-    padding: 0.8em 0.7em 0 0.7em;
-    background-color: #607D8B;
-    line-height: 1em;
-    position: relative;
-    left: -1px;
-    top: -4px;
-    height: 1.8em;
-    margin-right: .8em;
-    border-radius: 4px 0 0 4px;
-  }
+#newUserID{
+  // position: absolute; 
+  // top: 10; 
+  margin-right: .5%; 
+  margin-left: 35%; 
+  word-break: break-word;
+  padding: 15px 60px 15px 15px;
+  display: inline-table;
+  line-height: 1.2;
+  transition: color 0.4s;
+  font-size: 24px;
+}
 
-//   button {
-//   margin: 0;
-//   padding: 0;
-//   border: 0;
-//   background: none;
-//   font-size: 100%;
-//   vertical-align: baseline;
-//   font-family: inherit;
-//   font-weight: inherit;
-//   color: inherit;
-//   -webkit-appearance: none;
-//   -ms-appearance: none;
-//   appearance: none;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-font-smoothing: antialiased;
-//   -ms-font-smoothing: antialiased;
-//   font-smoothing: antialiased;
-// }
+#leftUserID{
+  // position: absolute; 
+  // top: 10; 
+  margin-right: .5%; 
+  margin-left: 35%; 
+  word-break: break-word;
+  padding: 15px 60px 15px 15px;
+  display: inline-table;
+  line-height: 1.2;
+  transition: color 0.4s;
+  font-size: 24px;
+}
+
+#resID{
+  position: fixed; bottom: 50; margin-right: .5%; margin-left: 75%;
+}
+
+#divID {
+background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%;  
+}
+
+div input{
+  border: 0; padding: 10px; width: 90%; 
+}
+
+div button {
+width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px;
+}
 
 form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
 form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+
 form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
 #messages { list-style-type: none; margin: 0; padding: 0; }
 #messages li { padding: 5px 10px; }
 #messages li:nth-child(odd) { background: #eee; }
 
+// #messages label { padding: 5px 10px; }
+// #messages label:nth-child() { background: #eee; }
 
-  #todo-list {
-  margin: 0;
+
+#client-list {
+  margin-left: 55%;
   padding: 0;
   list-style: none;
 }
 
-#todo-list li {
+#client-list li {
   position: relative;
   font-size: 24px;
   border-bottom: 1px solid #ededed;
 }
 
-#todo-list li label {
+#client-list li label {
   //white-space: pre;
   word-break: break-word;
   padding: 15px 60px 15px 15px;
@@ -120,38 +141,11 @@ form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 
   line-height: 1.2;
   transition: color 0.4s;
 }
-#todo-list li .show {
-  //white-space: pre;
-  word-break: break-word;
-  //padding: 15px 60px 15px 15px;
-  //margin-left: 45px;
-  display: inline-table;
-  line-height: 1.2;
-  transition: color 0.4s;
-}
-
-#todo-list li:last-child {
-  border-bottom: none;
-}
 
 
-#todo-list li.editing {
-  border-bottom: none;
-  padding: 0;
-}
 
-#todo-list li.editing .view {
-  display: none;
-}
 
-#todo-list li.editing .edit {
-  display: block;
-  width: 506px;
-  padding: 13px 17px 12px 17px;
-  margin: 0 0 0 43px;
-}
-
-#todo-list li .toggle {
+#client-list li .check-box {
   text-align: center;
   width: 40px;
   /* auto, since non-WebKit browsers doesn't support input styling */
@@ -166,11 +160,11 @@ form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 
   appearance: none;
 }
 
-#todo-list li .toggle:after {
-  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#ededed" stroke-width="3"/></svg>');
-}
+// #todo-list li .toggle:after {
+//   content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#ededed" stroke-width="3"/></svg>');
+// }
 
-#todo-list li .toggle:checked:after {
+#client-list li .check-box:checked:after {
   content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#bddad5" stroke-width="3"/><path fill="#5dc2af" d="M72 25L42 71 27 56l-4 4 20 20 34-52z"/></svg>');
 }
 
@@ -183,6 +177,9 @@ form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 
   display: none;
 }
 
+#todo-list li:last-child {
+  border-bottom: none;
+}
 
 #todo-list li .destroy {
   display: none;

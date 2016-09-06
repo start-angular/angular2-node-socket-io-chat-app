@@ -1,0 +1,9 @@
+<div id="note">
+	<h2>
+		Please Enter Your Name To Start Chatting...  	
+	</h2>
+</div>
+<div id="divID">
+	<input  #nickname placeholder="Nickname" (keyup)="addNickname($event, nickname)" autocomplete="off" autofocus value="" required>
+	<button (click)="submit(nickname)">Submit</button>
+</div>
