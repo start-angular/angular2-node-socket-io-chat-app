@@ -32,10 +32,12 @@ var ChatComponent = (function () {
             reference.clientsNameList = list;
         });
         globalVars.socket.on("addUserToSocketList", function (username) {
+            reference.exitedUser = false;
             reference.newUser = true;
             reference.newUserName = username;
         });
         globalVars.socket.on("removeUserFromSocketList", function (username) {
+            reference.newUser = false;
             reference.exitedUser = true;
             reference.exitedUserName = username;
         });

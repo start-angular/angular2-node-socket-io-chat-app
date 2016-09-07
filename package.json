@@ -2,7 +2,7 @@
   "name": "angular2-socket-chatApp",
   "version": "1.0.0",
   "scripts": {
-    "start": "tsc && concurrently \"npm run tsc:w\" \"nodemon ./server/index.js\" ",
+    "start": "tsc && concurrently \"npm run tsc:w client/**/*.ts\" \"nodemon ./server/index.js\" ",
     "lite": "lite-server",
     "postinstall": "typings install",
     "tsc": "tsc",

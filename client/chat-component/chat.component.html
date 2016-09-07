@@ -18,8 +18,8 @@
         <div id="newUserID" *ngIf="newUser">
           {{newUserName}} joined Chat!
         </div>
-        <div id="leftUserID" *ngIf="leftUser">
-          {{leftUserName}} left the Chat!
+        <div id="leftUserID" *ngIf="exitedUser">
+          {{exitedUserName}} left the Chat!
         </div>
         <ul id="client-list" >
           <li *ngFor="let name of clientsNameList" >
