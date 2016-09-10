@@ -128,7 +128,7 @@ background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%;
 }
 
 .chat-box, .enter-message{
-  background:#ECECEC;
+  background:#d3d3d3;
   padding:0 20px;
   color:#a1a1a1;
   height: 88%;
@@ -159,7 +159,6 @@ background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%;
   border:none;
   cursor: auto;
   padding:10px 12px;
-  background:#d3d3d3;
   width:79%;
   border-radius:2px;
   position: absolute;
