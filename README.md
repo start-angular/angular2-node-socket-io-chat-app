@@ -47,11 +47,11 @@ There are two components:
 * [`Chat`](client/chat-component/chat.component.ts) - for the chat page that depicts message flow between different sockets 
 
 <p align="center">
-  <img src="/public/Welcome-Page.png" alt="Angular 2 Node Socket.io Chat" width="500" height="360"/>
+  <img src="/public/Welcome-Page.png" alt="Angular 2 Node Socket.io Chat" width="600" height="360"/>
 </p>
 
 <p align="center">
-  <img src="/public/Chat-Page.png" alt="Angular 2 Node Socket.io Chat" width="500" height="360"/>
+  <img src="/public/Chat-Page.png" alt="Angular 2 Node Socket.io Chat" width="600" height="360"/>
 </p>
 
 
