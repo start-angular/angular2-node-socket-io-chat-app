@@ -12,7 +12,6 @@ import { routing, appRoutingProviders } from "./app.routing";
 import { NickNameModule }  from "./nickName-component/index";
 import { ChatModule }  from "./chat-component/index";
 
-// import { NicknameComponent }  from './app.nicknameComponent';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, routing, RouterModule, RouterModule.forRoot(appRoutes), NickNameModule, ChatModule],

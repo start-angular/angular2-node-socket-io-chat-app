@@ -17,14 +17,27 @@ var ChatComponent = (function () {
         this.newUserName = null;
         this.exitedUserName = null;
         this.sentMessageUsername = null;
+        this.msgCount = 0;
         var reference = this;
+        var temp;
         globalVars.socket.on("broadcastToAll_chatMessage", function (resObj) {
+            reference.msgCount++;
             if (reference.sentMessageUsername !== resObj.name) {
-                reference.message = resObj.name + ": " + resObj.msg;
-                $("#messages").append($("<li>").text(reference.message));
+                resObj.name = resObj.name + ": ";
+                temp = $("#messages").length;
+                console.log("ul length : ", temp);
+                console.log(reference.msgCount);
+                $("#messages").append($("<li data-index=" + reference.msgCount + ">"));
+                $("li[data-index=" + reference.msgCount + "]").append($("<div class='left-msg' data-index=" + reference.msgCount + ">"));
+                $("div[data-index=" + reference.msgCount + "]").append($("<span class='name'>").text(resObj.name));
+                $("div[data-index=" + reference.msgCount + "]").append($("<span class='msg'>").text(resObj.msg));
+                $("#messages").append($("<br>"));
             }
             else if (reference.sentMessageUsername === resObj.name) {
-                $("#messages").append($("<li>").text(resObj.msg));
+                $("#messages").append($("<li data-index=" + reference.msgCount + ">"));
+                $("li[data-index=" + reference.msgCount + "]").append($("<div class='right-msg' data-index=" + reference.msgCount + ">"));
+                $("div[data-index=" + reference.msgCount + "]").append($("<span class='msg'>").text(resObj.msg));
+                $("#messages").append($("<br>"));
                 reference.sentMessageUsername = null;
             }
         });

@@ -15,6 +15,10 @@ chat_app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
+chat_app.get('/chat', function(req, res){
+	res.redirect('/');
+});
+
 io.on('connection', function(socket){
 	clientListNames.push(socket.handshake.query.userName);
 	io.emit("updateSocketList", clientListNames);

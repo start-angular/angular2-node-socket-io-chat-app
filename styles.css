@@ -4,57 +4,67 @@ nav {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
-h2, h3 {
+h3 {
   color: #444;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
   font-size: 200%;
 }
 
+h2 {
+  
+}
+
 .main{
   width: 100%;
   margin-left: 0%;
+  display: flex;
+  flex-direction: row;
 }
 
 .firstSubChild{
   width: 70%;
-  float: left;
+  background: #5FB471;
   height: 100%;
+  position: relative;
 }
 
 .secondSubChild{
   width: 30%;
-  float: left;
   height: 100%;
+  position: relative;
 }
 
 #note{
   position: fixed; bottom: 80;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue',Helvetica, sans-serif;
+  font-size: 14px;}
+
+
+
 
 body { font: 13px Helvetica, Arial; }
 
+
+
+.user-alert{
+  position: absolute; 
+  top: 10;
+  right: 20;
+  max-width: 96%;
+  overflow-wrap: break-word;
+}
+
 #newUserID{
-  // position: absolute; 
-  // top: 10; 
-  margin-right: .5%; 
-  margin-left: 35%; 
-  word-break: break-word;
-  padding: 15px 60px 15px 15px;
-  display: inline-table;
+  padding: 15px 15px 15px 15px;
   line-height: 1.2;
   transition: color 0.4s;
   font-size: 24px;
 }
 
 #leftUserID{
-  // position: absolute; 
-  // top: 10; 
-  margin-right: .5%; 
-  margin-left: 35%; 
-  word-break: break-word;
   padding: 15px 60px 15px 15px;
   display: inline-table;
   line-height: 1.2;
@@ -63,49 +73,170 @@ body { font: 13px Helvetica, Arial; }
 }
 
 #resID{
-  position: fixed; bottom: 50; margin-right: .5%; margin-left: 75%;
+  position: absolute; bottom: 10; margin-left: 10;
 }
 
 #divID {
 background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%;  
 }
 
-div input{
+#divID input{
   border: 0; padding: 10px; width: 90%; 
 }
 
-div button {
-width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px;
+#divID button {
+  width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px;
 }
 
-#messages { list-style-type: none; margin: 0; padding: 0; }
-#messages li { padding: 5px 10px; }
-#messages li:nth-child(odd) { background: #eee; }
+
+.message{
+  list-style-type: none;
+}
+
+.message li .left-msg {
+  background:#fff;
+  border-radius:2px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.04);
+  padding:10px;
+  text-align:left;
+ }
 
 
-#client-list {
-  margin-left: 40%;
-  padding: 0;
+.message li .right-msg {
+  background:#fffafa;
+  padding:10px;
+  border-radius:2px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.04);
+  text-align:right;
+}
+
+
+.contain{
+  display:block;
+  box-shadow:0 2px 5px rgba(0,0,0,0.4);
+  height: 100%;
+}
+.header{
+  padding:20px 20px 18px 20px;
+  color:#fff;
+}
+.header h2{
+  font-size:16px;
+  line-height:15px;
+  display:inline-block;
+  padding-bottom: 1em;
+}
+
+.chat-box, .enter-message{
+  background:#ECECEC;
+  padding:0 20px;
+  color:#a1a1a1;
+  height: 88%;
+  overflow: scroll;
+}
+.chat-box .message-box{
+  padding:18px 0 10px;
+  clear:both;
+}
+
+
+.message  span .name {
+  padding: 5px 10px; 
+  color:#555;
+  font-weight:bold;
+}
+
+.message  span .msg {
+  padding: 5px 10px; 
+  
+}
+
+.enter-message{
+  padding:13px 0px;
+}
+
+.enter-message input{
+  border:none;
+  cursor: auto;
+  padding:10px 12px;
+  background:#d3d3d3;
+  width:79%;
+  border-radius:2px;
+  position: absolute;
+  bottom: 0;
+  left: 2em;
+}
+.enter-message button {
+  padding:8px 9px;
+  background:#d3d3d3;
+  border-radius:2px;
+  //float:right;
+  position: absolute;
+  bottom: 0;
+  right: 2em;
+  width: 11%;
+}
+
+
+
+.caption{
+  position: absolute !important; 
+  top: 140;
+  left: 120;
+  right: 90;
+}
+ 
+ .caption h2{
+  font-size:20px;
+  line-height:15px;
+  display:inline-block;
+ }
+
+.user-list {
+  //float: right;
+  position: absolute !important; 
+  top: 180;
+  right: 10;
+  border: 1px solid #d6d6d6;
+  max-width: 95%;
+  
+}
+.user-list-ul{
   list-style: none;
 }
-
-#client-list li {
+.user-list__item {
+  border-bottom: 1px solid #d6d6d6;
+  box-sizing: border-box;
   position: relative;
-  font-size: 24px;
-  border-bottom: 1px solid #ededed;
+  min-height: 60px;
+  background: #fff;
+  padding: 1px;
+  overflow-wrap: break-word;
 }
-
-#client-list li label {
-  //white-space: pre;
-  word-break: break-word;
-  padding: 15px 60px 15px 15px;
-  margin-left: 45px;
-  display: inline-table;
-  line-height: 1.2;
-  transition: color 0.4s;
+.user-list__content {
+  //display: table-cell;
+  padding-left: 78px;
+  padding-right: 60px;
+  padding-top: 15px;
+  min-height: 60px;
+  vertical-align: middle;
+  overflow-wrap: break-word;
+  align-items: center;
 }
-
-#client-list li .check-box {
+.user-list__name {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.user-list__item:hover {
+  background: #fff5cf;
+}
+.user-list__item:last-child {
+  border: none;
+}
+.text_size_m {
+  font-size: 18px /* bem-components l-size */;
+}
+.check-box {
   text-align: center;
   width: 40px;
   /* auto, since non-WebKit browsers doesn't support input styling */
@@ -119,8 +250,7 @@ width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px;
   -ms-appearance: none;
   appearance: none;
 }
-
-#client-list li .check-box:checked:after {
+.check-box:checked:after {
   content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#bddad5" stroke-width="3"/><path fill="#5dc2af" d="M72 25L42 71 27 56l-4 4 20 20 34-52z"/></svg>');
 }
 
