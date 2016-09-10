@@ -1,4 +1,4 @@
-Angular2-node-sockect.io Chat-App 
+Angular2-chat-app
 ==========================
 
 > An Angular 2 chat app using [Angular 2](https://angular.io/), [Node](https://nodejs.org/), [socket.io](http://socket.io/), [Express](https://expressjs.com/), [SystemJS](https://github.com/systemjs/systemjs), [TypeScript](http://www.typescriptlang.org/), Services, Injectables, Forms, Routing & Navigation, and [tslint](http://palantir.github.io/tslint/) by [GeekyAnts team](https://www.geekyants.com/)
