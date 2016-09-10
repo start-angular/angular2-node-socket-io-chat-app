@@ -13,7 +13,7 @@ This repo shows an example chat application using Socket.io, Node and Angular 2.
 > View the chat-app GIF here: 
 	
 <p align="center">
-  <img src="/public/chat-app.gif" alt="Angular 2 Node Socket.io Chat" width="800" height="577"/>
+  <img src="/public/chat-app.gif" alt="Angular 2 Node Socket.io Chat"/>
 </p>
 
 
