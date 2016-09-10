@@ -89,7 +89,7 @@ angular2-node-socket-io-chat-app/
 │   │   └── index.ts 					* index file for nickName Component
 |   |   
 │   ├── service/ 		      	      * service for all components
-|   |		|
+|   |	|
 │   │   └── global.ts 		        * file with global attributes
 |   |  
 │   ├── app.component.html 			  * Home component HTML   
