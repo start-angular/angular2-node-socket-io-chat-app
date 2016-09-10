@@ -10,6 +10,13 @@ This repo shows an example chat application using Socket.io, Node and Angular 2.
 * Wiring together Angular2 client-side components with Socket.io and Express on the server. 
 * And much more
 
+> View the chat-app GIF here: 
+	
+<p align="center">
+  <img src="/public/chat-app.gif" alt="Angular 2 Node Socket.io Chat" width="800" height="577"/>
+</p>
+
+
 ## Quick start
 
 ```bash
