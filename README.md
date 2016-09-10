@@ -55,12 +55,13 @@ There are two components:
 </p>
 
 
-There are two main parts:
+There are three main parts:
 * [`ChatBox`](client/chat-component/chat.component.ts) - for the interaction between different chat-Users/socket connections
-* [`ChatUsersList`](client/chat-component/chat.component.ts) - shows the currently active chat-Users/Scokets
+* [`ChatUsersList`](client/chat-component/chat.component.ts) - shows the currently active chat-Users/Scokets and also the chat-user alerts for new user connection, dis-connected user and success for message passing.
+* [`ChatUserAlerts`](client/chat-component/chat.component.ts) - shows the chat-user alerts for new user connection, dis-connected user and success for message passing.
 
 <p align="center">
-  <img src="/public/ChatPage-Description.png" alt="Angular 2 Node Socket.io Chat" width="500" height="360"/>
+  <img src="/public/ChatPage-Description.png" alt="Angular 2 Node Socket.io Chat" width="800" height="577"/>
 </p>
 
 
