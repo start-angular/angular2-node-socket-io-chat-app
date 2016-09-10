@@ -1,12 +1,12 @@
-Angular2-node-sockect.io Chat-App 
+Angular2-chat-app
 ==========================
 
 > An Angular 2 chat app using [Angular 2](https://angular.io/), [Node](https://nodejs.org/), [socket.io](http://socket.io/), [Express](https://expressjs.com/), [SystemJS](https://github.com/systemjs/systemjs), [TypeScript](http://www.typescriptlang.org/), Services, Injectables, Forms, Routing & Navigation, and [tslint](http://palantir.github.io/tslint/) by [GeekyAnts team](https://www.geekyants.com/)
 
-This repo shows an example chat application using Socket.io, Node and Angular 2. The goal is to implement Socket Programming within Angular 2. It also features:
+This repo shows an example chat application using Socket.io, Node and Angular 2. The goal is to implement Socket Programming with Angular 2. It also features:
 
 * Express configuration with TypeScript, and tslint
-* Use of injectables, forms, routing $ navigation services in Angular 2
+* Use of injectables, forms, routing & navigation services in Angular 2
 * Wiring together Angular2 client-side components with Socket.io and Express on the server. 
 * And much more
 
@@ -47,18 +47,18 @@ There are two components:
 * [`Chat`](client/chat-component/chat.component.ts) - for the chat page that depicts message flow between different sockets 
 
 <p align="center">
-  <img src="/public/Welcome-Page.png" alt="Angular 2 Node Socket.io Chat" width="500" height="360"/>
+  <img src="/public/Welcome-Page.png" alt="Angular 2 Node Socket.io Chat" width="600" height="360"/>
 </p>
 
 <p align="center">
-  <img src="/public/Chat-Page.png" alt="Angular 2 Node Socket.io Chat" width="500" height="360"/>
+  <img src="/public/Chat-Page.png" alt="Angular 2 Node Socket.io Chat" width="600" height="360"/>
 </p>
 
 
-There are three main parts:
+There are mainly three sections of the Chat-component:
 * [`ChatBox`](client/chat-component/chat.component.ts) - for the interaction between different chat-Users/socket connections
-* [`ChatUsersList`](client/chat-component/chat.component.ts) - shows the currently active chat-Users/Scokets and also the chat-user alerts for new user connection, dis-connected user and success for message passing.
-* [`ChatUserAlerts`](client/chat-component/chat.component.ts) - shows the chat-user alerts for new user connection, dis-connected user and success for message passing.
+* [`ChatUsersList`](client/chat-component/chat.component.ts) - shows the currently active chat-Users/Scokets
+* [`ChatUserAlerts`](client/chat-component/chat.component.ts) - shows the chat-user alerts for new user connection, dis-connected user and success for message passing
 
 <p align="center">
   <img src="/public/ChatPage-Description.png" alt="Angular 2 Node Socket.io Chat" width="800" height="577"/>
