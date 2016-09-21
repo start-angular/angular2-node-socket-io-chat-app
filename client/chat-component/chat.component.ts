@@ -1,6 +1,8 @@
 import { Component } from "@angular/core";
 import * as globalVars from "../service/global";
-/// <reference path="../../typings/jquery/jquery.d.ts" />
+
+/// <reference path="../../typings/globals/jquery/index.d.ts/>
+
 
 import "/socket.io/socket.io.js";
 

@@ -2,8 +2,13 @@ import { Component } from "@angular/core";
 import { Router }    from "@angular/router";
 import * as globalVars from "../service/global";
 import {Inject} from "@angular/core";
+
+
+/// <reference path="../../typings/globals/jquery/index.d.ts/>
+
+
+
 import "/socket.io/socket.io.js";
-/// <reference path="../../typings/jquery/jquery.d.ts" />
 
 
 @Component({

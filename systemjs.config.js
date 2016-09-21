@@ -7,6 +7,7 @@
   var map = {
     'client':                     'client', // 'dist',
     '@angular':                   'node_modules/@angular',
+    'jquery':                     'node_modules/jquery',
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
     'rxjs':                       'node_modules/rxjs',
     'socket.io':                  'node_modules/socket.io',
