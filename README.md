@@ -118,4 +118,9 @@ angular2-node-socket-io-chat-app/
 ├── tsconfig.js                 	    * Some hacks to get TypeScript tests
 ├── tslint.json                       * Configures our TypeScript linter
 └── typings.json                      * Configures our TypeScript linter 
+
+
+## Road Map
+
+There is a known issue with Windows systems. The directory path doesn't gets resolved correctly thereby creates compile issues with typecsript files. The app works fine on **MAC** and **Linux** systems. This issue will be resolved in coming weeks. 
 ```
