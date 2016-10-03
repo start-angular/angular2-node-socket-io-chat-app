@@ -120,7 +120,7 @@ angular2-node-socket-io-chat-app/
 └── typings.json                      * Configures our TypeScript linter 
 ```
 
-## Road Map
+## Known Issues
 
-There is a known issue with Windows systems. The directory path doesn't gets resolved correctly thereby creates compile issues with typecsript files. The app works fine on **MAC** and **Linux** systems. This issue will be resolved in coming weeks. 
+There is a issue with Windows systems. The directory path doesn't gets resolved correctly thereby creates compile issues with typecsript files. The app works fine on **MAC** and **Linux** systems. This issue will be resolved in coming weeks. Also If anyone finds a fix for the same, do send a pull request.
 
