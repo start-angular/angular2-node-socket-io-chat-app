@@ -37,9 +37,11 @@ Then visit [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Architecture
 
-<p align="center">
-  <img src="/public/Sequence-Diagram.png" alt="Angular 2 Node Socket.io Chat" width="800" height="577"/>
-</p>
+<code>
+  <p align="center">
+    <img src="/public/Sequence-Diagram.png" alt="Angular 2 Node Socket.io Chat" width="800" height="577"/>
+  </p>
+</code>
 
 There are two components:
 
