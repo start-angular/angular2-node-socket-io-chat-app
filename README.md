@@ -5,6 +5,8 @@
 
 > An Angular 2 chat app using [Angular 2](https://angular.io/), [Node](https://nodejs.org/), [socket.io](http://socket.io/), [Express](https://expressjs.com/), [SystemJS](https://github.com/systemjs/systemjs), [TypeScript](http://www.typescriptlang.org/), Services, Injectables, Forms, Routing & Navigation, and [tslint](http://palantir.github.io/tslint/) by [GeekyAnts team](https://www.geekyants.com/)
 
+Note: This repo is no longer maintained.
+
 This repo shows an example chat application using Socket.io, Node and Angular 2. The goal is to implement Socket Programming with Angular 2. It also features:
 
 * Express configuration with TypeScript, and tslint
